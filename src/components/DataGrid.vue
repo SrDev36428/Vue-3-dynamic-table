@@ -233,7 +233,11 @@
                     ]"
                     title="Pin/Unpin row"
                   >
-                  <img src="@/assets/img/pin.png" alt="Pin" class="w-3 h-3" />
+                    <img 
+                      :src="pinnedRowIds.includes(getRowId(row)) ? '../assets/img/multi.png' : '../assets/img/pin.png'" 
+                      :alt="pinnedRowIds.includes(getRowId(row)) ? 'Unpin' : 'Pin'" 
+                      class="w-3 h-3" 
+                    />
                   </button>
                 </div>
               </td>
