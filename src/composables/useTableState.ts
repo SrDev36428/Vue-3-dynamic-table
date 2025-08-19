@@ -1,5 +1,5 @@
-import { ref, reactive, computed } from 'vue';
-import type { TableState, SortState, FilterState } from '../types';
+import { reactive, computed } from 'vue';
+import type { TableState } from '../types';
 
 export function useTableState() {
   const state = reactive<TableState>({
