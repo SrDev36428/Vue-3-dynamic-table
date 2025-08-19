@@ -183,9 +183,7 @@
                       class="p-1 text-primary-600 hover:text-primary-800 transition-colors"
                       title="Unpin row"
                     >
-                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
-                      </svg>
+                    <img src="../assets/img/multi.png" alt="Pin" class="w-3 h-3" />
                     </button>
                   </div>
                 </td>
@@ -233,11 +231,7 @@
                     ]"
                     title="Pin/Unpin row"
                   >
-                    <img 
-                      :src="pinnedRowIds.includes(getRowId(row)) ? '../assets/img/multi.png' : '../assets/img/pin.png'" 
-                      :alt="pinnedRowIds.includes(getRowId(row)) ? 'Unpin' : 'Pin'" 
-                      class="w-3 h-3" 
-                    />
+                    <img src="../assets/img/pin.png" alt="Pin" class="w-3 h-3" />
                   </button>
                 </div>
               </td>
